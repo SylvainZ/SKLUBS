@@ -1,3 +1,8 @@
+@font-face{
+	font-family: "Quando";
+	src:url("Quando-Regular.ttf");
+}
+
 body{
 	background-image: url("BLUMYS.png");
 	background-repeat: no-repeat;
@@ -42,7 +47,7 @@ img{
 .titreinscription{
   display: block;
   width: 100%;
-  font-family: Raleway-Black;
+  font-family: Quando;
   font-size: 30px;
   color: white;
   text-align: left;
@@ -65,7 +70,7 @@ img{
 
 /*personnalisation des noms de champs*/
 .inputNom{
-  font-family: Raleway-SemiBold;
+  font-family: Quando;
   font-size: 18px;
   color: white;
 }
@@ -110,7 +115,7 @@ img{
   box-shadow: none;
   border-radius: 10px 10px 10px 10px;
 
-  font-family: Raleway-Bold;
+  font-family: Quando;
   font-size: 20px;
   color: white;
 }

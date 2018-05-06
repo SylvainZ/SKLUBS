@@ -1,10 +1,3 @@
-/**
- * Created by IntelliJ IDEA.
- * User: Mialisoa S
- * Date: 06/05/2018
- * Time: 12:44
- */
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,19 +18,18 @@
     <form action="../Modèle/modifieProfil.php" method="post" enctype="multipart/form-data">
         <p>
             Nom, Prénom, Statut: <br/>
-            <input type="text" name="nom" placeholder="nom"/>
-            <input type="text" name="prenom" placeholder="prénom" /><br/>
-            <select name="statut">
+            <input type="text" name="nom" placeholder="nom" id="champ"/>
+            <input type="text" name="prenom" placeholder="prénom" id="champ"  /><br/>
+            <select name="statut" id="champ">
                 <option value="proprietaire">proprietaire</option>
                 <option value="locataire">locataire</option>
-                <option value="gestionnaire">gestionnaire</option>
             </select><br /><br/>
             Adresse complète:<br/>
-            <input type="text" name="numAppartement" placeholder="numéro d'appartement" />
-            <input type="text" name="numEtage" placeholder="numéro d'étage"/><br />
-            <input type="text" name="numRue" placeholder="numéro de rue"/>
+            <input type="text" name="numAppartement" placeholder="numéro d'appartement" id="champ"/>
+            <input type="text" name="numEtage" placeholder="numéro d'étage" id="champ" /><br />
+            <input type="text" name="numRue" placeholder="numéro de rue" id="champ"/>
             <input type="checkbox" name="numBis" value="bis"/><label for="bis">bis</label>
-            <select name="prefixRueBdAve">
+            <select name="prefixRueBdAve" id="champ">
                 <option value="rue">rue</option>
                 <option value="bd">boulevard</option>
                 <option value="ave">avenue</option>
@@ -45,15 +37,15 @@
                 <option value="pond">pond</option>
             </select>
 
-            <input type="text" name="nomRueBdAve" placeholder="nom de rue, boulevard ou avenue" /><br/>
-            <input type="text" name="departement" placeholder="département" />
-            <input type="text" name="ville" placeholder="ville"/></span><br/>
+            <input type="text" name="nomRueBdAve" placeholder="nom de rue, boulevard ou avenue" id="champ" /><br/>
+            <input type="text" name="departement" placeholder="département" id="champ"  />
+            <input type="text" name="ville" placeholder="ville" id="champ" /></span><br/><br/>
             Mail:<br/>
-            <input type="text" name="email" placeholder="email"/><br/>
+            <input type="text" name="email" placeholder="email" id="champ"/><br/><br/>
             Numéro de téléphone:<br/>
-            <input type="text" name="numTel" placeholder="numéro de téléphone"/><br />
-            <input type="submit" value="Envoyer les modifications" class="boutonEnvoyerModification"/><br />
-            <a href="profil.php" >annulé</a>
+            <input type="text" name="numTel" placeholder="numéro de téléphone" id="champ" /><br /><br/>
+            <input type="submit" value="Envoyer les modifications" class="boutonEnvoyerModification"  /><br />
+            <input type="button" value="Annuler">
         </p>
     </form>
 

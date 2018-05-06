@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="miseEnPageProfil.css" />
-        <title>Messagerie</title>
+        <title>Profil</title>
     </head>
 
     <body>

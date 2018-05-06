@@ -1,10 +1,10 @@
 @font-face{
 	font-family: "Quando";
-	src:url("Quando-Regular.ttf");
+	src:url("quando/Quando-Regular.ttf");
 }
 
 body{
-	background-image: url("BLUMYS.png");
+	background-image: url("images/BLUMYS.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: auto;
@@ -84,7 +84,7 @@ img{
   border-radius: 2px;
   border:none;
 
-  font-family: Raleway-SemiBold;
+  font-family: Quando;
   font-size: 20px;
   color: #686868;
   padding: 0 28px;

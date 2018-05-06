@@ -1,0 +1,66 @@
+body {
+background-image: url("images/BLUMYS.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+	background-position: center;
+}
+.cd{ 
+
+	text-align: center;
+}
+
+.titre{
+	text-align: center;
+	font-size: 4em;
+}
+.block1{
+	background: #9998b2;
+	height: 200px;
+	opacity: 0.6;
+	border: 6px white solid;
+
+}
+.block3{
+	background: #9998b2;
+	display: inline-block;
+	height: 200px;
+	width: 32.1%;
+	opacity: 0.6;
+	border: 6px white solid;
+	position: relative;
+	top: 10px;
+}
+
+#vf{
+	position: relative;
+	top: 30px;
+	display: flex;
+	margin-left: 38%;
+	
+}
+
+input{
+	border-style: solid;
+	background: red;
+	border: 2px black solid;
+	height: 30px;
+}
+
+.connect
+{
+	position: relative;
+	right: 5px;
+}
+
+.help
+{
+	position: relative;
+	left: 5px;
+}
+
+button{
+	border-radius: 5px;
+	border-style: solid;
+	background: -webkit-linear-gradient(left,#fedfdd,orange,#fedfdd);
+}

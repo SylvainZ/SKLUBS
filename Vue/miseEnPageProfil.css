@@ -1,17 +1,17 @@
 
+
+
 body
 {
-    background-image: url("images/BLUMYS.png");
-    background-repeat: no-repeat;
+    background:url("images/BLUMYS.png") no-repeat;
     background-size: cover;
-    margin: auto;
-    background-position: center;
+    margin-top:10%;
 }
 
 .profil
 {
     position:absolute;
-    color: white;
+    color: black;
     margin-left:46%;
     top:7%;
     font-size: 3.5em;
@@ -36,21 +36,6 @@ body
     
 }
 
-/*#champ{
-    width: 50%;
-    height: 40%;
-    background: #f2f2f2;
-    border-radius: 2px;
-    border:none;
-    display: flex;
-    font-family: Quando;
-    font-size: 16px;
-    color: #686868;
-    transition: all 0.4s;
-    margin-top: 10px;
-}
-*/
-
 .boutonDeconnection
 {
     position: absolute;
@@ -62,32 +47,19 @@ body
 
 p
 {
-    font-family: Quando;
-    font-size: 18px;
+    font-size: 26px;
     color: white;
     border-left: 4em solid transparent;
 }
 
 .rectangle
 {
-   /* max-width: 500px;
-    background: #6a1b3c;
-    border-radius: 10px;
-    padding: 30px 80px 30px 80px;
-    margin-left: 25%;
-    margin-right: 50%;
-    display: flex;*/
     display: flex;
-    padding: 0px 70px 0px 30px;
-    max-width: 500px;
     background-color: #6a1b3d;
-    height: 430px;
+    height: 440px;
     width:80%;
-    margin-left:27%;
-    margin-right: 50%;
-    border-radius: 10px;
-    position: relative;
-    top: 120px;
+    margin-left:10%;
+    border-radius: 40px;
 }
 
 .valeurImporte

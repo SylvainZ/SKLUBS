@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="miseEnPageProfil.css" />
-        <title>Profil</title>
+        <title>Messagerie</title>
     </head>
 
     <body>
@@ -28,7 +28,7 @@
 					<span class="valeurImporte"> mail</span><br/>
 					Numéro de téléphone:<br/>
 					<span class="valeurImporte"> numTel</span>
-					<form action="../Modèle/modifieProfil.php" class="positionModifProfil">
+					<form action="../Vue/sessionProfil.php" class="positionModifProfil">
 					<input type="submit"  class="modifProfil" name="modifProfil" value="Modifier le profil"/>
 					</form>
 		    	</p>

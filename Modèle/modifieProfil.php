@@ -12,7 +12,6 @@ if (isset($_POST['nom'])
 	&&isset($_POST['numTel'])){
 	try {	$bdd = new PDO('mysql:host=localhost;dbname=homemate;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));}
 	catch(Exception $e){	die('Erreur : '.$e->getMessage());}
-
 	/*INSERT INTO profil (Nom,Prenom,Statut,NumeroAppartement,NumeroEtage,NumeroRue,Bis,PrefixeRueAveBd,NomRueAveBd,NumeroDepartement,Ville,Email,NumeroTelephone) VALUES ('nom','preomn','Gérant',5,5,46,'avenue','Champs de Mars',71,'Paris','fr@fr.fr',32)*/
 	$req = $bdd->prepare('UPDATE profil SET Nom = ? ,Prenom= ? ,Statut = ? ,NumeroAppartement = ? ,NumeroEtage = ? ,NumeroRue = ? ,Bis = ? ,PrefixeRueAveBd = ? ,NomRueAveBd = ? ,NumeroDepartement = ? ,Ville = ? ,Email = ? ,NumeroTelephone = ? WHERE ID = 1');
 	if(isset($_POST['numBis'])){
@@ -51,4 +50,3 @@ if (isset($_POST['nom'])
 else{
     header('Location: ../modele/modifierProfil.php');
 } ?>
-

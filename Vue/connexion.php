@@ -42,7 +42,7 @@
 
         <p style=" font-style: italic">
        
-         <a href= "../mdp_oublie.html" target="_blank"> Mot de passe oublié ?</a><br/>
+         <a href= "mdp_oublie.html" target="_blank"> Mot de passe oublié ?</a><br/>
          <a href="creerUnCompte.php">Pas encore de compte?</a> <br/><br/>
 
         </p>

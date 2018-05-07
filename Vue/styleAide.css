@@ -1,0 +1,16 @@
+body {
+background-image: url("images/BLUMYS.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: auto;
+	background-position: center;
+}
+
+.blocs
+{
+	background: #6a1b3d;
+	color: white;
+	display:flex;
+	margin:auto;
+	justify-content: space-around;
+}

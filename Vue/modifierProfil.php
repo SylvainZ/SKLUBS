@@ -63,9 +63,9 @@ $_SESSION['numTel']=$_donnees['numTel'];
             Mail:<br/>
             <input type="text" name="email" placeholder="email" value=<?php echo $_SESSION['email'];?> /><br/>
             Numéro de téléphone:<br/>
-            <input type="text" name="numTel" placeholder="numéro de téléphone" value=<?php echo $_SESSION['numTel'];?> /><br />
+            <input type="text" name="numTel" placeholder="numéro de téléphone" value=<?php echo $_SESSION['numTel'];?> /><br /><br>
             <input type="submit" value="Envoyer les modifications" class="boutonEnvoyerModification"/><br />
-            <a href="profil.php" >annulé</a>
+            <button><a href="profil.php" >Annuler</a></button>
         </p>
     </form>
 

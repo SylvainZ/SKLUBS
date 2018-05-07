@@ -1,42 +1,26 @@
 <?php
-<?php
-    
-$servername = "localhost";
-$username = "username";
-$password = "password";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
+if (isset($_POST['Email'])
+    &&isset($_POST['password'])) {
 
-// Check connection
-if (!$conn) {
-    header('Location:../Vue/connexionErreur.php');
-}
-session_start();
-        $_SESSION['user'] = $username;
-        header('Location:../Vue/profil.php');
-
-/*$username = "USER";
-
-$password = "PASS";
-
-if( isset($_POST['username']) && isset($_POST['password']) ){
-
-    if($_POST['username'] == $username && $_POST['password'] == $password){ // Si les infos correspondent...
-
-        session_start();
-
-        $_SESSION['user'] = $username;
-        header('Location:../Vue/profil.php');
-
+    try {
+        $bdd = new PDO('mysql:host=localhost;dbname=homemate;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    } catch (Exception $e) {
+        die('Erreur : ' . $e->getMessage());
     }
 
-    else{ // Sinon
 
+    $requete = $bdd->prepare("SELECT Email,password FROM profil WHERE Email = ? AND password = ?");
+    $requete->execute(array($_POST['Email'], $_POST['password']));
+    //$requete->closeCursor();
+    $donnees = $requete->fetch();
+    //echo $donnees['Email'].' '.$donnees['password'];
+    if (isset($donnees['Email']) AND isset($donnees['password']) ) {
+        header('Location:../Vue/profil.php');
+    }
+
+    else {
         header('Location:../Vue/connexionErreur.php');
-
     }
-
-}*/
-
+}
 ?>

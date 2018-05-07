@@ -11,7 +11,7 @@
 
 <div class="connection">
 
-    <form method="post" action="../Contrôleur/authentification.php">
+    <form method="post" action="../Controleur/authentification.php">
         <p>L'identifiant et/ou le mot de pass n'existe pas <br/> Veuillez recommencer</p>
         <h2>CONNEXION</h2>
 
@@ -20,7 +20,7 @@
 
             <br/>
 
-            <input id="username" class="champs" type="text" name="username">
+            <input id="username" class="champs" type="text" name="Email">
 
                 <br /><br/>
 

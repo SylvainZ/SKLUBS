@@ -11,7 +11,7 @@
 
     <div class="connection">
         
-        <form method="post" action="../Contrôleur/authentification.php">
+        <form method="post" action="../Controleur/authentification.php">
             
             <h2>CONNEXION</h2>
            
@@ -20,7 +20,7 @@
             
             <br/>
 
-            <input id="username" class="champs" type="text" name="username"/>
+            <input id="username" class="champs" type="text" name="Email" required/>
         
                 <br /><br/>
 
@@ -29,7 +29,7 @@
 
                 <br/> 
             
-            <input id="password"  class=champs type="password" name="password"/>
+            <input id="password"  class=champs type="password" name="password" required/>
 
                 <br /><br/>
             

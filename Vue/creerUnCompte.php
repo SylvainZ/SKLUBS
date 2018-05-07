@@ -30,8 +30,8 @@
 			</div>
 
 			<div class="champnom ligne2">
-				<label for="mail" class="inputNom">Adresse mail</label><br>
-				<input type="text" name="mail" id="mail"/><br>
+				<label for="Email" class="inputNom">Adresse mail</label><br>
+				<input type="text" name="Email" id="mail"/><br>
 			</div>
 					
 			<div class="champnom ligne2 colonne2">			

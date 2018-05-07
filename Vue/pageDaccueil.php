@@ -33,7 +33,7 @@
                 <input type="submit" value="Nous contacter" class="button" />
             </form>
 
-            <form class="help">
+            <form action="aide.php" class="help">
                 <input type="submit" value="aide" class="button" >
             </form>
 

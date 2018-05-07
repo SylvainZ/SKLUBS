@@ -1,9 +1,9 @@
 <?php
-<?php
+
     
 $servername = "localhost";
-$username = "username";
-$password = "password";
+$username = $bdd->query('SELECT * FROM ');
+$password = $bdd->query('SELECT * FROM ');
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password);

@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>BLUMYS</title>
-		<link rel="stylesheet" href="styleMDP.css" />
-	</head>
+    <head>
+        <title>Mot de passe oublié</title>
+        <link rel="stylesheet" href="styleMDP.css">
+        <meta charset="utf-8" />
 
-	<body>
+    </head>
+ <body >
+        <img class="image" src="images/homemate2.png" alt="image logo">
 
-		
-		
-		<div class="A">
-		<h1>MOT DE PASSE OUBLIE</h1>
-        <form method="post" action="../Contrôleur/modificationMDP.php">
+    <div class="bloc">
+        
+        <form method="post" action="../Contrôleur/authentification.php">
+            
+            <h2>MOT DE PASSE OUBLIE</h2>
+           
+            <span class="color">Saisissez votre pseudo
+            </span>
+            
+            <br/><br />
 
-		<label for="pseudo">
-        Votre pseudo <br>
-        <input type="text" name="pseudo">
-        </label>
-		<br>
-		<br>
-        <label for="email">
-        Votre email <br>
-        <input type="text" name="email">
-        </label>
-		<br>
-		<br>
+            <input id="pseudo" class="text" type="text" name="pseudo"/>
+        
+                <br /><br/>
 
-		<input type="submit" value="Confirmer">
+            <span class="color">Saisissez votre adresse email
+            </span>
+
+                <br/> <br />
+            
+            <input id="email"  class="text" type="text" name="email"/>
+
+                <br /><br/>
+            
+            <input class="valider" type="submit" value="VALIDER">
+                
+                <br/>
+
         </form>
-		</div>
 
 
-	
+      
+    </div>
 
+        <br/>
+    <footer>
+            <p>Copyright 2018 HomeMate | Tous droits réservés</p>
+    </footer>
+ <br/>
+ </body>
 
-	</body>
-
+</html>

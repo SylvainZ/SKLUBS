@@ -1,4 +1,9 @@
+<?php
+// On démarre la session AVANT d'écrire du code HTML
+session_start();
+?>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8" />
@@ -18,17 +23,17 @@
     		<div class="col1">
 				<p>
 					Nom, Prénom, Statut: <br/>
-					<span class="valeurImporte"> nom prénom</span><br/>
-					<span class="valeurImporte"> statut</span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['nom'].', '.$_SESSION['prenom'];?></span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['statut'];?></span><br/>
 					Adresse complète:<br/>
-					<span class="valeurImporte"> numAppart, numEtage</span><br/>
-					<span class="valeurImporte"> numRue nomRueBdAve nomDeRue</span><br/>
-					<span class="valeurImporte"> Departement Ville</span><br/>
+					<span class="valeurImporte"> Batiment <?php echo $_SESSION['numAppartement'].', Etage '.$_SESSION['numEtage'];?></span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['numRue'].' '.$_SESSION['numBis'].' '.$_SESSION['prefixeRueBdAve'].' de '.$_SESSION['nomRueBdAve'];?>  </span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['departement'].', '.$_SESSION['ville'];?> </span><br/>
 					Mail:<br/>
-					<span class="valeurImporte"> mail</span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['email'];?></span><br/>
 					Numéro de téléphone:<br/>
-					<span class="valeurImporte"> numTel</span>
-					<form action="../Vue/sessionProfil.php" class="positionModifProfil">
+					<span class="valeurImporte"> <?php echo $_SESSION['numTel'];?></span>
+					<form action="../Modele/sessionProfil.php" class="positionModifProfil">
 					<input type="submit"  class="modifProfil" name="modifProfil" value="Modifier le profil"/>
 					</form>
 		    	</p>

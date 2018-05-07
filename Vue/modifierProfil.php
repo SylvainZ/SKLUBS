@@ -1,21 +1,6 @@
 <?php
 // On démarre la session AVANT d'écrire du code HTML
 session_start();
-
-
-/*
-$_SESSION['statut']=$_donnees['statut'];
-$_SESSION['numAppartement']=$_donnees['numAppartement'];
-$_SESSION['numEtage']=$_donnees['numEtage'];
-$_SESSION['numRue']=$_donnees['numRue'];
-$_SESSION['numBis']=$_donnees['numBis'];
-$_SESSION['prefixRueBdAve']=$_donnees['prefixRueBdAve'];
-$_SESSION['nomRueBdAve']=$_donnees['nomRueBdAve'];
-$_SESSION['departement']=$_donnees['departement'];
-$_SESSION['ville']=$_donnees['ville'];
-$_SESSION['email']=$_donnees['email'];
-$_SESSION['numTel']=$_donnees['numTel'];
-*/
 ?>
 <html>
 <head>
@@ -33,7 +18,7 @@ $_SESSION['numTel']=$_donnees['numTel'];
 <img src="images/iconeDeconnection.png" class="boutonDeconnection" alt="bouton de déconnection" href="pageDAccueil.php"/>
 
 <div class="rectangle">
-    <form action="../Modèle/modifieProfil.php" method="post" enctype="multipart/form-data">
+    <form action="../Modele/modifieProfil.php" method="post" enctype="multipart/form-data">
         <p>
             Nom, Prénom, Statut: <br/>
             <input type="text" name="nom" placeholder="nom" value= <?php echo $_SESSION['nom'];?> />
@@ -49,7 +34,7 @@ $_SESSION['numTel']=$_donnees['numTel'];
             <input type="text" name="numEtage" placeholder="numéro d'étage" value= <?php echo $_SESSION['numEtage'];?> /><br />
             <input type="text" name="numRue" placeholder="numéro de rue" value=<?php echo $_SESSION['numRue'];?> />
             <input type="checkbox" name="numBis" value="bis"/><label for="bis">bis</label>
-            <select name="prefixRueBdAve">
+            <select name="prefixeRueBdAve">
                 <option value="rue">rue</option>
                 <option value="bd">boulevard</option>
                 <option value="ave">avenue</option>
@@ -65,7 +50,7 @@ $_SESSION['numTel']=$_donnees['numTel'];
             Numéro de téléphone:<br/>
             <input type="text" name="numTel" placeholder="numéro de téléphone" value=<?php echo $_SESSION['numTel'];?> /><br />
             <input type="submit" value="Envoyer les modifications" class="boutonEnvoyerModification"/><br />
-            <a href="profil.php" >annulé</a>
+            <a href="profil.php" >annuler</a>
         </p>
     </form>
 

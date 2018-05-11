@@ -11,25 +11,25 @@
     	<!--<span class="nom_du_site">HOMEMATE</span><br/>-->
     	<section class="ajout">
 	        <h1>Ajouter un capteur</h1>
-	        <form method="post" action="capteur.php">
-	        	<p>
+	        <form method="post" action="../Modele/ajoutCapteur.php">
+	        	<p> 
 					<label for="nom_du_capteur" class="nom_capteur">Nom du capteur* : </label><br/>
 					<select name="nom_du_capteur" id="nom_du_capteur" required>
 						<optgroup label="Température">
-							<option value="thermomètre">Thermomètre</option>
-							<option value="chaud">Chaud</option>
-							<option value="froid">Froid</option>
+							<option value="Temperature-thermomètre">Thermomètre</option>
+							<option value="Temperature-chaud">Chaud</option>
+							<option value="Temperature-froid">Froid</option>
 						</optgroup>
 						<optgroup label="Luminosité">
-							<option value="lampe_de_bureau">Lampe de bureau</option>
-							<option value="lustre">Lustre</option>
-							<option value="ampoule">Ampoule</option>
-							<option value="globe">Globe</option>
+							<option value="Luminosite-lampe_de_bureau">Lampe de bureau</option>
+							<option value="Luminosite-lustre">Lustre</option>
+							<option value="Luminosite-ampoule">Ampoule</option>
+							<option value="Luminosite-globe">Globe</option>
 						</optgroup>
-						<optgroup label="Présence" >
-							<option value="mouvement">Mouvement</option>
-							<option value="bouge">Bouge</option>
-							<option value="present">Présent</option>
+						<optgroup label="Présence">
+							<option value="Presence-mouvement">Mouvement</option>
+							<option value="Presence-bouge">Bouge</option>
+							<option value="Presence-present">Présent</option>
 						</optgroup>
 					</select><br/><br/>
 					
@@ -72,4 +72,3 @@ Ex: Derrière le canapé"/></textarea><br/><br/>
     </body>
 
 </html>
-

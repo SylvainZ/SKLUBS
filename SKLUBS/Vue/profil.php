@@ -8,7 +8,7 @@ session_start();
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="miseEnPageProfil.css" />
-        <title>Messagerie</title>
+        <title>Profil</title>
     </head>
 
     <body>
@@ -24,11 +24,12 @@ session_start();
 				<p>
 					Nom, Prénom, Statut: <br/>
 					<span class="valeurImporte"> <?php echo $_SESSION['nom'].', '.$_SESSION['prenom'];?></span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['datedenaissance'];?></span><br/>
 					<span class="valeurImporte"> <?php echo $_SESSION['statut'];?></span><br/>
 					Adresse complète:<br/>
-					<span class="valeurImporte"> Batiment <?php echo $_SESSION['numAppartement'].', Etage '.$_SESSION['numEtage'];?></span><br/>
-					<span class="valeurImporte"> <?php echo $_SESSION['numRue'].' '.$_SESSION['numBis'].' '.$_SESSION['prefixeRueBdAve'].' de '.$_SESSION['nomRueBdAve'];?>  </span><br/>
-					<span class="valeurImporte"> <?php echo $_SESSION['departement'].', '.$_SESSION['ville'];?> </span><br/>
+					<span class="valeurImporte"> Batiment <?php echo $_SESSION['numLogement'].', Etage '.$_SESSION['numEtage'];?></span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['numRue'].' '.$_SESSION['numBis'].' '.$_SESSION['nomRueBdAve'];?>  </span><br/>
+					<span class="valeurImporte"> <?php echo $_SESSION['codePostal'].' '.$_SESSION['ville'];?> </span><br/>
 					Mail:<br/>
 					<span class="valeurImporte"> <?php echo $_SESSION['email'];?></span><br/>
 					Numéro de téléphone:<br/>

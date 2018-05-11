@@ -1,4 +1,4 @@
-﻿@font-face{
+@font-face{
 	font-family: "Quando";
 	src:url("quando/Quando-Regular.ttf");
 }
@@ -40,14 +40,14 @@ img{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 
 .titreinscription{
   display: block;
   width: 100%;
-  font-family: Quando;
+  font-family: Quando, serif;
   font-size: 30px;
   color: white;
   text-align: left;
@@ -70,13 +70,13 @@ img{
 
 /*personnalisation des noms de champs*/
 .inputNom{
-  font-family: Quando;
+  font-family: Quando, serif;
   font-size: 18px;
   color: white;
 }
 
 /*caractéristiques des champs de texte*/
-#nom, #prenom, #Email, #password{
+#nom, #prenom, #mail, #password{
   display: block;
   width: 70%;
   height: 60%;
@@ -84,10 +84,10 @@ img{
   border-radius: 2px;
   border:none;
 
-  font-family: Quando;
-  font-size: 20px;
+  font-family: Quando, serif;
+  font-size: 11px;
   color: #686868;
-  padding: 0 28px;
+  padding: 0 10px;
   transition: all 0.4s;
   margin-top: 10px;
 }
@@ -115,7 +115,7 @@ img{
   box-shadow: none;
   border-radius: 10px 10px 10px 10px;
 
-  font-family: Quando;
+  font-family: Quando, serif;
   font-size: 20px;
   color: white;
 }

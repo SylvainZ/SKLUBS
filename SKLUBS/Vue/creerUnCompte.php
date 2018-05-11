@@ -1,35 +1,5 @@
-﻿<?php
-if(!empty($_POST['nom']))
-{
-    try
-    {
-        $bdd = new PDO('mysql:host=localhost;dbname=site;charset=utf8', 'root', '');
-    }
-    catch(Exception $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }
-        $password = $_POST['password'];
-        $prenom = $_POST['prenom'];
-        $nom = $_POST['nom'];
-        $Email = $_POST['Email'];
-        
-        
-        
-        // Je vais crypter le mot de passe.
-        $password = sha1($password);
-
-        $req = $bdd->prepare('INSERT INTO profil(nom,prenom,Email,password) VALUES(:nom,:prenom,:Email,:password)');
-        $req->execute(array(
-            'nom' => $_POST['nom'],
-            'prenom' => $_POST['prenom'],
-            'Email' => $_POST['Email'],
-            'password' => $_POST['password'],
-
-            ));
-
-    
-}
+<?php
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,7 +19,7 @@ if(!empty($_POST['nom']))
 
 	<div class="inscription">
 
-		<form class="form1" method="post" action="../Modèle/creationCompteBis.php">
+		<form class="form1" method="post" action="../Modele/creationCompteBis.php">
 			<span class="titreinscription">Créer un compte</span>
 
 			<div class="champnom ligne1">
@@ -63,8 +33,8 @@ if(!empty($_POST['nom']))
 			</div>
 
 			<div class="champnom ligne2">
-				<label for="mail" class="inputNom">Adresse mail</label><br>
-				<input type="text" name="mail" id="mail"/><br>
+				<label for="Email" class="inputNom">Adresse mail</label><br>
+				<input type="text" name="Email" id="mail"/><br>
 			</div>
 					
 			<div class="champnom ligne2 colonne2">			

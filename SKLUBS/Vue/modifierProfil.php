@@ -30,7 +30,7 @@ session_start();
                 <option value="gestionnaire">gestionnaire</option>
             </select><br /><br/>
             Adresse complète:<br/>
-            <input type="text" name="numAppartement" placeholder="numéro d'appartement" value=<?php echo $_SESSION['numAppartement'];?> />
+            <input type="text" name="numLogement" placeholder="numéro d'appartement" value=<?php echo $_SESSION['numLogement'];?> />
             <input type="text" name="numEtage" placeholder="numéro d'étage" value= <?php echo $_SESSION['numEtage'];?> /><br />
             <input type="text" name="numRue" placeholder="numéro de rue" value=<?php echo $_SESSION['numRue'];?> />
             <input type="checkbox" name="numBis" value="bis"/><label for="bis">bis</label>
@@ -43,7 +43,7 @@ session_start();
             </select>
 
             <input type="text" name="nomRueBdAve" placeholder="nom de rue, boulevard ou avenue"  value=<?php echo $_SESSION['nomRueBdAve'];?> /><br/>
-            <input type="text" name="departement" placeholder="département"  value=<?php echo $_SESSION['departement'];?> />
+            <input type="text" name="codePostal" placeholder="département"  value=<?php echo $_SESSION['codePostal'];?> />
             <input type="text" name="ville" placeholder="ville" value=<?php echo $_SESSION['ville'];?> /></span><br/>
             Mail:<br/>
             <input type="text" name="email" placeholder="email" value=<?php echo $_SESSION['email'];?> /><br/>

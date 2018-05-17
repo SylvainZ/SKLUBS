@@ -5,22 +5,24 @@
         <link rel="stylesheet" href="connexion.css">
         <meta charset="utf-8" />
 
+
     </head>
  <body >
-        <img class="image" src="images/homemate2.png" alt="image logo">
+
+        <img class="image"   src="images/homemate2.png" alt="image logo"><br>
 
     <div class="connection">
-        
-        <form method="post" action="../Controleur/authentification.php">
-            
-            <h2>CONNEXION</h2>
-           
-            <span class="color">Saisissez votre identifiant 
+        <h2>CONNEXION</h2>
+        <div id="resultat"></div>
+
+        <form >
+
+            <span class="color">Saisissez votre identifiant
             </span>
             
             <br/>
 
-            <input id="username" class="champs" type="text" name="Email" required/>
+            <input id="username" class="champs" type="email" name="Email" required/>
         
                 <br /><br/>
 
@@ -33,15 +35,13 @@
 
                 <br /><br/>
             
-            <input class="valider" type="submit" value="VALIDER">
+            <input id="valider" type="submit" value="VALIDER"">
                 
                 <br/>
 
         </form>
 
 
-        <p style=" font-style: italic">
-       
          <a href= "mdp_oublie.html" target="_blank"> Mot de passe oublié ?</a><br/>
          <a href="creerUnCompte.php">Pas encore de compte?</a> <br/><br/>
 
@@ -54,6 +54,9 @@
             <p>Copyright 2018 HomeMate | Tous droits réservés</p>
     </footer>
  <br/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="../Controleur/connexion.js" type="text/javascript"></script>
  </body>
 
 </html>
+

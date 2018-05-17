@@ -1,0 +1,178 @@
+body
+{
+	background-image: url("BLUMYS.png");
+	
+	
+	background-repeat: no-repeat;
+	background-position: center fixed;
+	background-size: cover;
+
+
+
+}
+html
+{
+height: 100%;
+}
+
+.logo
+{
+	position:fixed;
+	left: 66%;
+	top: 35px;
+}
+
+.logo2
+{
+	position:fixed;
+	left: 66.2%;
+	top:0px;
+}
+
+.logo3
+{
+	position: fixed;
+	left: 3%;
+	top:-5px;
+	
+}
+
+.A
+{
+
+	background-color: rgb(4,43,123);
+	position: fixed;
+	left: 70%;
+	color:white;
+	border:100px;
+	text-align:center;
+	padding-top:7px;
+	padding-bottom:11px;
+	top:15px;
+	width:8%;
+	border-color: rgb(0,0,0);
+	
+
+}
+
+.B
+{
+background-color: rgb(4,43,123);
+	position: fixed;
+	left: 80%;
+	color:white;
+	border:100px;
+	text-align:center;
+	padding: auto;
+	top: 15px  ;
+	width:8%;
+	border-color: rgb(0,0,0);
+
+}
+
+footer
+{
+	position: relative;
+	left: 40%;
+	bottom:5%;
+}
+
+#tonDiv{
+
+display:none;
+background:#471229;
+
+
+}
+
+#Bouton{
+
+	right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #2f0c1b;
+
+}
+#Bouton2{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+#Bouton3{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+#Bouton4{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+#bouton{
+
+	right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #2f0c1b;
+
+}
+#bouton2{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+#bouton3{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+#bouton4{
+	margin-right:100%;
+	border-radius: 5%;
+	border-style:solid;
+	border-color: white;
+	color: white;
+	background-color: #471229 ;
+
+}
+.menu
+{
+	margin-top: 8%;
+	background-color: #2f0c1b;
+
+}
+
+.menu2
+{
+	margin-top: 12%;
+	background-color: #2f0c1b;
+
+}
+.entete
+{
+	background: none;
+}

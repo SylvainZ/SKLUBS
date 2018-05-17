@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOMEMATE</title>
+	<link rel="stylesheet" href="CapteurActionneursHabitations.css">
+	<script type="text/javascript" src="capteurs.js"></script>
+</head>
+
+<body>
+	
+	<div class = "entete">
+	<div class="A"><p>Habitation(s)</p></div>
+	<div class="B"><p>Capteurs/</br>Actionneurs</p></div>
+	<p class="logo"> <img src="cloche.png" width="37" height="37" /> </p>
+	<p class="logo2"> <img src="profil.png" width="30" height="30" /> </p>
+	<p class="logo3"> <img src="logo.png" width="150" height="75 " /> </p>
+	</div>
+
+	<div class="menu"> <!--bouton 1 et background-->
+	
+		<button id="Bouton">Capteurs</button>
+			<div id="tonDiv">
+				<br/>
+					<button id="Bouton2">Luminosité</button>
+	 					<div id="tonDiv2"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+	 				<button id="Bouton3">Température</button>
+	 					<div id="tonDiv3"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+					<button id="Bouton4">Détecteur de mouvement</button>
+	 					<div id="tonDiv4"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+	 	 	</div>	
+   	</div>
+
+   	<div class="menu2"> <!--bouton 1 et background-->
+	
+		<button id="bouton">Capteurs</button>
+			<div id="tondiv">
+				<br/>
+					<button id="bouton2">Luminosité</button>
+	 					<div id="tondiv2"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+	 				<button id="bouton3">Température</button>
+	 					<div id="tondiv3"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+					<button id="bouton4">Détecteur de mouvement</button>
+	 					<div id="tondiv4"><ul> <li> Pièce1 </li><li> Pièce2 </li><li> Pièce3 </li></ul></div>
+	 	 	</div>	
+   	</div>
+
+
+
+
+   	<script>
+	document.querySelector("#Bouton").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tonDiv')).display=='none'){
+	document.querySelector("#tonDiv").style.display="block";
+	} else {
+	document.querySelector("#tonDiv").style.display="none";
+	}
+	}
+	</script>
+	<script>
+	document.querySelector("#Bouton2").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tonDiv2')).display=='none'){
+	document.querySelector("#tonDiv2").style.display="block";
+	} else {
+	document.querySelector("#tonDiv2").style.display="none";
+	}
+	}
+	</script>
+	<script>
+	document.querySelector("#Bouton3").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tonDiv3')).display=='none'){
+	document.querySelector("#tonDiv3").style.display="block";
+	} else {
+	document.querySelector("#tonDiv3").style.display="none";
+	}
+	}
+	</script>
+	<script>
+	document.querySelector("#Bouton4").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tonDiv4')).display=='none'){
+	document.querySelector("#tonDiv4").style.display="block";
+	} else {
+	document.querySelector("#tonDiv4").style.display="none";
+	}
+	}
+
+	</script>
+
+	<script>
+	document.querySelector("#bouton").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tondiv')).display=='none'){
+	document.querySelector("#tondiv").style.display="block";
+	} else {
+	document.querySelector("#tondiv").style.display="none";
+	}
+	}
+	
+	</script>
+
+	<script>
+	document.querySelector("#bouton2").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tondiv2')).display=='none'){
+	document.querySelector("#tondiv2").style.display="block";
+	} else {
+	document.querySelector("#tondiv2").style.display="none";
+	}
+	}
+	
+	</script>
+
+	<script>
+	document.querySelector("#bouton3").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tondiv3')).display=='none'){
+	document.querySelector("#tondiv3").style.display="block";
+	} else {
+	document.querySelector("#tondiv3").style.display="none";
+	}
+	}
+	
+	</script>
+
+	<script>
+	document.querySelector("#bouton4").onclick = function() {
+	if (window.getComputedStyle(document.querySelector('#tondiv4')).display=='none'){
+	document.querySelector("#tondiv4").style.display="block";
+	} else {
+	document.querySelector("#tondiv4").style.display="none";
+	}
+	}
+	
+	</script>
+
+
+<footer>Copyright 2018 HomeMate, All Rights Reserved</footer>
+</body>
+</html>

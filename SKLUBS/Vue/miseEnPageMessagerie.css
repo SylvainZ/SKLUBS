@@ -1,77 +1,72 @@
 h1
 {
     color: purple;
-    border-left: 230px solid transparent;
-
+    border-left: 15vw solid transparent;
+    font-size: 2.5vw;
 }
 
 
 body
 {
-    background:url("DOMOTIQUE.png") no-repeat;
+    background:url("images/BLUMYS.png") no-repeat;
     background-size: cover;
+	margin-top: 3vw;
+	margin-left: 8vw;
 }
 
 p
 {
-    font-size: 26px;
+    font-size: 2vw;
     color: purple;
-    border-left: 150px solid transparent;
+    border-left: 9vw solid transparent;
 }
 
 
 
 .zoneTexte
 {
-    border-radius: 4px;
+    border-radius: 0.2vw;
     border: none;
-    width: 63.5%;
-    height: 30px;
+    width: 63vw;
+    height: 2vw;
     background: #9997b1;
-    margin-bottom: 1.2%;
+    margin-bottom: 1.2vw;
 }
 
 .zoneMessage
 {
-    border-radius: 4px;
+    border-radius: 0.2vw;
     background: #9997b1;
+	width: 63vw;
+    height: 13vw;
 }
 
 .zoneEnvoie
 {
-    border-radius: 4px;
-    width: 7%;
-    height: 30px;
+    border-radius: 0.4vw;
+    width: 6vw;
+    height: 2vw;
     background: #cccccc;
-    margin-left: 56.5%;
+    margin-left: 57.6vw;
     color: purple;
-    font-size: 21px;
+    font-size: 1.2vw;
 }
 
 .iconeLettre
 {
-    border-radius: 4px;
-    width: 60px;
-    height: 50px;
+    border-radius: 0.1vw;
+    width: 5vw;
+    height: 4vw;
     position: absolute;
-    top: 40px;
-    left: 160px;
+    top: 2.3vw;
+    left: 17vw;
     
 }
 .logo
 {
     position: absolute;
-    top: 2%;
-    left: 80%;
-    width: 10%;
+    top: 2.3vw;
+    left: 73vw;
+    width: 9vw;
     
-}
-
-.nomSite
-{
-    position: absolute;
-    top: 12.8%;
-    left: 80.3%;
-    color: purple;
-    font-size:1.5em;
 }

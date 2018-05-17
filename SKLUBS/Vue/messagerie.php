@@ -7,12 +7,9 @@
     </head>
 
     <body>
-    	<br />
-    	<img src="lettre.png" class="iconeLettre" alt="Icône lettre" href="pageDAccueil.php"/> <h1>Envoyer un message</h1>
-    	<img src="homemate2.png" class="logo" alt="image du logo" href="pageDAccueil.php"/>
-    	<span class="nomSite">HOMEMATE</span>
+    	<img src="images/lettre.png" class="iconeLettre" alt="Icône lettre" href="pageDAccueil.php"/> <h1>Envoyer un message</h1>
+    	<img src="images/logo_nouvo.png" class="logo" alt="image du logo" href="pageDAccueil.php"/>
     	<div class="rectangle">
-    	<div class="col1">
 			<p>
 		        <label for="nom">Nom</label><br />
 		        <input type="text" class="zoneTexte" name="nom" /><br />

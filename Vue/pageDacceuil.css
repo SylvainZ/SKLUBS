@@ -1,3 +1,9 @@
+@font-face
+{
+    font-family: 'Quando';
+    src: url('quando/Quando-Regular.ttf');
+}
+
 body {
 	background-image: url("images/BLUMYS.png");
 	background-repeat: no-repeat;
@@ -5,16 +11,10 @@ body {
 	margin: auto;
 	background-position: center;
 }
-.cd{
-	text-align: center;
-}
 
-img{
-    width: 240px;
-}
 
 .titre{
-	font-family: Quando, serif;
+	font-family: Quando;
 	text-align: center;
 	font-size: 3em;
     font-weight: bold;
@@ -42,39 +42,6 @@ img{
 	top: 10px;
 }
 
-#vf{
-	position: relative;
-	top: 30px;
-	display: flex;
-	margin-left: 38%;
-	
-}
-
-input{
-	background: white;
-	border: 2px solid black;
-	height: 30px;
-}
-
-.connect
-{
-	position: relative;
-	right: 5px;
-}
-
-.help
-{
-	position: relative;
-	left: 5px;
-}
-
-.button{
-    border-radius: 5px;
-    border-style: none;
-    background: -webkit-linear-gradient(left, #fedfdd, #625c8e, #625c8e, #fedfdd);
-    color: white;
-    font-weight: bold;
-}
 
 footer p{
     font-size: 18px;

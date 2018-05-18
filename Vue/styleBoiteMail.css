@@ -1,0 +1,146 @@
+/*Ajout de la poilice Quando*/
+@font-face 
+{
+    font-family: 'Quando';
+    src: url('quando/Quando-Regular.ttf');
+}
+
+body
+{
+	background:url("images/BLUMYS.png") fixed no-repeat center;
+	background-size:cover;
+	margin:auto;
+	font-family:Quando;
+}
+
+/*Positionnement du logo*/
+#logo
+{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:14em;
+
+}
+
+h1
+{
+	text-align:center;
+}
+
+.liste
+{
+	text-shadow: -1px -1px white, 2px 2px blue;
+
+}
+
+.corbeille
+{
+	color:white;
+	text-decoration:none;
+}
+
+.listeMessage
+{
+	display:flex;
+	
+}
+
+.menu
+{
+	background-color:#6a1b3d;
+	margin-left:2em;
+	padding-left:1.5em;
+	padding-right:1.3em;
+	padding-top:1.5em;
+	border-radius:10px;
+	width:13em;
+	height:10em;
+	color:white;
+	font-size:1em;
+}
+
+.rectangle
+{
+	background-color:#6a1b3d;
+	margin:auto;
+	padding-left:60px;
+	padding-right:60px;
+	padding-top:20px;
+	border-radius:10px;
+	width:40em;
+	height:20em;
+	color:white;
+	font-size:1em;
+
+}
+
+.rectanglebis
+{
+	display:flex;
+	flex-direction: column;
+}
+
+#selection
+{
+	border-radius:5px;
+}
+
+.nouveau
+{
+	border-radius:5px;
+	height:27px;
+	background-color:#635c8e;
+	color:white;
+	background: -webkit-linear-gradient(left, #fedfdd, #625c8e, #625c8e, #fedfdd);
+	box-shadow:none;
+}
+
+.en_tete
+{
+	display:flex;
+	justify-content: space-between;
+	background-color: #9998b2;
+	padding-left:1.5em;
+	padding-right:1.5em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	border-radius:5px;
+	border:solid black;
+	font-style:bold;
+	font-size: 1.3em;
+}
+
+.message1, .message2, .message3
+{
+	display:flex;
+	justify-content: space-between;
+	background-color: #9998b2;
+	padding-left:1.5em;
+	padding-right:1.5em;
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	border-radius:5px;
+	border:solid black;
+}
+
+.debut
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.page
+{
+	text-align:center;
+	color:white;	
+}
+
+/*Ecriture des droits d'auteurs*/
+.droit
+{
+	text-align:center;
+	color:white;
+}
+
+

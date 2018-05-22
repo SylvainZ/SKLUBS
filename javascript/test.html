@@ -1,0 +1,59 @@
+<dialog id='form'>
+	<form method="post">
+	<input type="text" name="titre" id="titre" />
+
+	<input type="button" id='save' onclick="ajouterLigne();" value="Enregistrer"/>
+	</form>
+</dialog>
+
+
+<table id="tableau" border="1">
+	<thead>
+		<tr>
+			<th>Titre</th>
+
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr id="ligne1">
+			<td>Premier article</td>
+			<td><input type="button" name="bu" id="bu" value="+"></td>
+
+		</tr>
+
+	</tbody>
+</table>
+
+
+
+<script type="text/javascript">
+
+(function(){
+	var boutton = document.getElementById('bu');
+	var save = document.getElementById('save');
+	boutton.addEventListener('click', function(){
+			document.getElementById("form").showModal();
+	})
+
+	save.addEventListener('click', function(){
+			document.getElementById("form").close();
+	})
+
+
+})();
+
+
+function ajouterLigne()
+{
+	var tableau = document.getElementById("tableau");
+
+	var ligne = document.getElementById('ligne1');//on a ajouté une ligne
+
+	var colonne1 = ligne.insertCell(1);//on a une ajouté une cellule
+	colonne1.innerHTML += document.getElementById("titre").value;//on y met le contenu de titre
+	
+	//document.location.href='test.html';
+}
+</script>
+

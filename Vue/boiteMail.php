@@ -1,29 +1,7 @@
+
 <?php
 session_start();
 ?>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Boîte mail</title>
-        <link rel="stylesheet" href="miseEnPageMessage.css">
-        <meta charset="utf-8" />
-
-    </head>
-	<body >
-		<img class="imageLettre" src="images/lettre.png" alt="image logo">
-		<img class="logo" src="images/logo_nouvo.png" alt="image logo">
-		<h2>Boîte mail</h2>
-
-		
-		<br/>
-		<footer>
-				<p>Copyright 2018 HomeMate | Tous droits réservés</p>
-		</footer>
-	<br/>
-	</body>
-
-</html>
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -41,7 +19,7 @@ session_start();
 	    	<section class="menu">
 	    		<p>
 		    		<input type="button" value="Nouveau message" class="nouveau"/>
-		    		<div class="liste">Liste des messages</div><br/>
+		    		<div class="liste"><a href='boiteReceptionRecherche.php'>Liste des messages</a></div><br/>
 		    		<div><a href="corbeille.php" class="corbeille">Corbeille</a></div>
 	    		</p>
 	    	</section>
@@ -72,42 +50,32 @@ session_start();
 					
 <?php
 					/*Partie qui affiche les messages stockés dans la session ouverte*/
-					$i = 0;
-					for ($i = 1; $i <= 10; $i++){
-						if (isset($_SESSION['sujet'.$i])&& isset($_SESSION['expediteur'.$i])&&isset($_SESSION['date'.$i])){
-							echo '<div class="message'.$i.'">';
-								echo '<input type="checkbox" name="message1" id="message1"/>
-								<label for="message"'.$i.'>'.$_SESSION['sujet'.$i].'</label>
-								<label for="message"'.$i.'>'.$_SESSION['expediteur'.$i].'</label>
-								<label for="message"'.$i.'>'.$_SESSION['date'.$i].'</label>' ;
-							echo '</div>';
-						}
-					}
 					
+
+						echo '<form action="pageMessage.php" method="post" >';
+						
+						for ($i = 1; $i <= 10; $i++){
+							if (isset($_SESSION['sujet'][$i])&& isset($_SESSION['expediteur'][$i])&&isset($_SESSION['date'][$i])){
+								echo '<div class="message">';
+									echo '<input type="checkbox" name="message" id="message"/>
+									<a href="pageMessage.php/?message='.$i.'">
+									<div class="messageIndividuel">'.$_SESSION['sujet'][$i].'</div>
+									<div class="messageIndividuel">'.$_SESSION['expediteur'][$i].'</div>
+									<div class="messageIndividuel">'.$_SESSION['date'][$i].'</div>
+									</a>';
+								echo '</div>';
+							}
+						}
+					
+						
+						echo '</form>';
+
 ?>
 					
 
 
 
-
-		    			<!--<div class="sujet">
-			    			<input type="checkbox" name="message1" id="message1"/>
-			    			<label for="message1">Message 1</label><br/>
-			    			<input type="checkbox" name="message2" id="message2"/>
-			    			<label for="message2">Message 2</label><br/>
-			    			<input type="checkbox" name="message3" id="message3"/>
-			    			<label for="message3">Message 3</label><br/>		
-		    			</div>
-		    			<div class="expediteur">
-		    				<label for="message1">Léon</label><br/>
-		    				<label for="message2">Kévin</label><br/>
-		    				<label for="message3">Sylvain</label>
-		    			</div>
-		    			<div class="date">
-		    				<label for="message1">10/05/2018</label><br/>
-		    				<label for="message2">02/05/2018</label><br/>
-		    				<label for="message3">15/04/2018</label>
-		    			</div> -->
+		    			<!-- commentaire : changer de page -->
 		    			<div class="page">Pages: 1</div>
 	    			</div>
 

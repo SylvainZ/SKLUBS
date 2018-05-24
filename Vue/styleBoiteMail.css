@@ -111,7 +111,7 @@ h1
 	font-size: 1.3em;
 }
 
-.message1, .message2, .message3
+.message
 {
 	display:flex;
 	justify-content: space-between;
@@ -123,6 +123,14 @@ h1
 	border-radius:5px;
 	border:solid black;
 }
+.messageIndividuel
+{
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+
+}
+
 
 .debut
 {
@@ -139,8 +147,7 @@ h1
 /*Ecriture des droits d'auteurs*/
 .droit
 {
+	position: bottom;
 	text-align:center;
 	color:white;
 }
-
-

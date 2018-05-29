@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,24 +26,46 @@
 
     <div class="barreMenu">
 
-        <div class="cd"> <img src="images/homemate2.png"> </div>
+        <div class="cd"> <a href="pageDaccueil.php"><img src="images/homemate2.png"> </a></div>
         <div class="posMenu">
             <ul id="menu">
-                <li>
+                    <?php
+                    if (isset($_SESSION['nom'])){
+                        ?>
+                    <li>
+                        <a href="#"><?php echo $_SESSION['nom']." ".$_SESSION['prenom']?></a>
+                    <ul>
+                        <li><a href="profil.php" >Profil</a> </li>
+                        <li><a href="../Controleur/deconnexion.php">Deconnexion</a> </li>
+                    </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Besoin d'aide ?</a>
+                    </li>
+                    <?php
+                    }
+
+                    else{
+                        ?>
+                    <li>
                     <a href="#">Mon compte</a>
                     <ul>
-                        <li><a href="connexion.php" role="button" aria-haspopup="dialog" aria-controls="dialog">Se connecter</a> </li>
+                        <li><a href="connexion.php" >Se connecter</a> </li>
                         <li><a href="creerUnCompte.php">S'inscrire</a> </li>
                     </ul>
-                </li>
+                    </li>
 
-                <li>
-                    <a href="messagerie.php">Nous contacter</a>
-                </li>
+                    <li>
+                           <a href="messagerie.php">Nous contacter</a>
+                    </li>
 
-                <li>
-                    <a href="#">Besoin d'aide ?</a>
-                </li>
+                    <li>
+                           <a href="#">Besoin d'aide ?</a>
+                    </li>
+                    <?php } ?>
+
+
 
             </ul>
         </div>

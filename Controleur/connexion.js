@@ -12,13 +12,13 @@ $(document).ready(function(){
 
             function(data){
 
-                if(data == 'success'){
+                if (data == 'success') {
                     // Le membre est connecté. Ajoutons lui un message dans la page HTML.
                     //document.getElementById('resultat').innerHTML = "Login successful.";
                     //$("#resultat").html("<p>Vous avez été connecté avec succès !</p>");
-                   window.location = '../Vue/profil.php';
+                     window.location = '../Modele/session.php?email='+$("#username").val();
                 }
-                else{
+                else {
                     // Le membre n'a pas été connecté. (data vaut ici "failed")
                     document.getElementById('resultat').innerHTML = "Login failed. Please check your login & password.";
                     //$("#resultat").html("<p>Erreur lors de la connexion...</p>");

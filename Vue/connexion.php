@@ -11,7 +11,7 @@
 
         <img class="image"   src="images/homemate2.png" alt="image logo"><br>
 
-    <div class="connection">
+   <div class="connection">
         <h2>CONNEXION</h2>
         <div id="resultat"></div>
 
@@ -45,9 +45,9 @@
          <a href= "mdp_oublie.html" target="_blank"> Mot de passe oublié ?</a><br/>
          <a href="creerUnCompte.php">Pas encore de compte?</a> <br/><br/>
 
-        </p>
 
     </div>
+
 
         <br/>
     <footer>
